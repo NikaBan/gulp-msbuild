@@ -9,11 +9,6 @@ cache:
   directories:
   - node_modules
   - website/node_modules
-branches:
-  only:
-  - master
-  - next
-  - v0.11.0
 install:
 - git fetch --unshallow --all
 - yarn global add codecov
