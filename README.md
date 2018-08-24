@@ -12,7 +12,7 @@
 
 ## Usage
 
-First, install `gulp-msbuild` as a development dependency:
+First, install `gulp-msbuild` as a development dependency
 
 ```shell
 npm install --save-dev gulp-msbuild
