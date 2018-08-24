@@ -13,8 +13,9 @@ install:
 - git fetch --unshallow --all
 - yarn global add codecov
 - yarn
+- npm install -g istanbul
 script:
- - yarn run test && codecov
+ - yarn codecov
 after_script:
   - npm run coveralls
 env:
