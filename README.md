@@ -1,6 +1,3 @@
-
-# Testing
-=======
 # testing
 
 # gulp-msbuild
