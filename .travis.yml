@@ -1,4 +1,5 @@
-language: node_js
+language: java
+dist: trusty
 sudo: false
 node_js:
   - '6.11'
@@ -9,3 +10,12 @@ after_script:
 env:
   global:
     - secure: "aK5LIuEs6Vwb9CZ5VSob/EAk8XFqT4XRxXavs1SF1eeg7nuL38TNReDQ9+fRJrEm1kQEnkzWg5L9KHdj+AliyJF+niphafqwkui1mSdj6RwvBkj2EmzZoGeJE0BoDxXmWInPStRgj3DDc6ONhhCS9yegjYDyimRNQVuO5glOFX4="
+
+addons:
+  sonarcloud:
+    organization: "kelvinlee96-github" # the key of the org you chose at step #3
+    token:
+      secure: 4b233b52e7ca52c2fb52ecaf9358bfc2c01661d8 # encrypted value of your token
+script:
+  # other script steps might be done before running the actual analysis
+  - sonar-scanner
