@@ -14,7 +14,7 @@ var msbuildFinder = require('../lib/msbuild-finder');
 
 describe('msbuild-finder', function () {
   var fs = require('fs');
-  var mock;
+
 
   describe('linux platorm', function() {
     var child = require ('child_process');
